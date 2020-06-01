@@ -1,0 +1,30 @@
+{#{% sw_extends '@Storefront/storefront/base.html.twig' %}#}
+{% sw_extends '@ExampleTheme/storefront/base.html.twig' %}
+
+{% block base_header %}
+    {{ parent() }}
+    <script>
+        console.log('Plugin base_header')
+    </script>
+{% endblock %}
+
+{% block base_header_inner %}
+    {{ parent() }}
+    <script>
+        console.log('Plugin base_header_inner')
+    </script>
+{% endblock %}
+
+{% block base_navigation %}
+    {{ parent() }}
+    <script>
+        console.log('Plugin base_navigation')
+    </script>
+{% endblock %}
+
+{% block base_script_router %}
+    {{ parent() }}
+    <script>
+        console.log('Plugin base_script_router')
+    </script>
+{%  endblock %}
